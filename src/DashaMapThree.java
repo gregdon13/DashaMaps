@@ -45,7 +45,7 @@ public class DashaMapThree implements HashMapX{
     }
 
     @Override
-    public void set(String key, Integer value) {
+    public void set(String key, String value) {
 
     }
 

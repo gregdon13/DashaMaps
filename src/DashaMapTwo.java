@@ -40,7 +40,7 @@ public class DashaMapTwo implements HashMapX{
     }
 
     @Override
-    public void set(String key, Integer value) {
+    public void set(String key, String value) {
 
     }
 
