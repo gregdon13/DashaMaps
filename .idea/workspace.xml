@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16758b06-b4a0-4f1d-844b-c1c64f8682b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DashaMapOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DashaMapThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DashaMapTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HashMapX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SinglyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DashaMaps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DashaMaps.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashaMapOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashaMapThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DashaMapTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapTwo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +71,15 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565362466667" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -148,7 +151,7 @@
       <workItem from="1565357947238" duration="6000" />
       <workItem from="1565357963802" duration="4390000" />
       <workItem from="1616872140496" duration="74000" />
-      <workItem from="1617191896326" duration="1418000" />
+      <workItem from="1617191896326" duration="3657000" />
     </task>
     <servers />
   </component>
