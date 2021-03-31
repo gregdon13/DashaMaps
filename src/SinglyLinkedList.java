@@ -62,4 +62,8 @@ public class SinglyLinkedList<E, T> {
         return !temp.hasNext();
     }
 
+    public Node<E, T> getHead() {
+        return this.head;
+    }
+
 }
