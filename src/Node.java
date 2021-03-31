@@ -1,15 +1,16 @@
 public class Node<E, T> {
-        private String key;
-        private Integer value;
+    //option to be made generic if I replace the fields
+        private E key;
+        private T value;
         private Node<E, T> next;
 
-        public Node(String key, Integer value, Node<E, T> next) {
+        public Node(E key, T value, Node<E, T> next) {
             this.key = key;
             this.value = value;
             this.next = next;
         }
 
-        public Node (String key, Integer value) {
+        public Node (E key, T value) {
             this.key = key;
             this.value = value;
             this.next = null;
@@ -31,19 +32,19 @@ public class Node<E, T> {
             this.next = next;
         }
 
-        public void setKey(String key) {
+        public void setKey(E key) {
             this.key = key;
         }
 
-        public String getKey() {
+        public E getKey() {
             return this.key;
         }
 
-        public void setValue(Integer value) {
+        public void setValue(T value) {
             this.value = value;
         }
 
-        public Integer getValue () {
+        public T getValue () {
             return this.value;
         }
 }

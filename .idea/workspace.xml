@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="16758b06-b4a0-4f1d-844b-c1c64f8682b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashaMapOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DashaMapThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DashaMapTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SinglyLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +151,7 @@
       <workItem from="1565357947238" duration="6000" />
       <workItem from="1565357963802" duration="4390000" />
       <workItem from="1616872140496" duration="74000" />
-      <workItem from="1617191896326" duration="3657000" />
+      <workItem from="1617191896326" duration="6011000" />
     </task>
     <servers />
   </component>
