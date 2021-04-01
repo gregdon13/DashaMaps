@@ -33,11 +33,11 @@ public class DashaMapThree implements HashMapX{
 
     private String HashFunctionThree(String input) {
         if (input.length() > 1) {
-            int current = Character.toLowerCase(input.charAt(0)+input.charAt(1));
-            if (current > 122) {
-                int newVal = (current - 122) + 96;
-                char wrapLetter = (char) newVal;
-                return Character.toString(wrapLetter);
+            int one = Character.toLowerCase(input.charAt(0));
+            int two = Character.toLowerCase(input.charAt(1));
+            int current = one + two;
+            while (current > 122) {
+                current = current - 'z' + 'a';
             }
             return Character.toString((char) current);
         }
@@ -46,31 +46,69 @@ public class DashaMapThree implements HashMapX{
 
     @Override
     public void set(String key, String value) {
-
+        String letter = HashFunctionThree(key);
+        for (SinglyLinkedList s : singlyLinkedList) {
+            if (s.getHead().getKey().equals(letter)) {
+                s.addNode(key, value);
+            }
+        }
     }
 
     @Override
-    public String delete(String key) {
-        return null;
+    public void delete(String key) {
+        String letter = HashFunctionThree(key);
+        for (SinglyLinkedList s : singlyLinkedList) {
+            if (s.getHead().getKey().equals(letter)) {
+                Node<String, String> temp = s.getHead();
+                while (temp.hasNext()) {
+                    if (temp.getNext().getKey().equals(key)) {
+                        temp.setNext(temp.getNext().getNext());
+                        break;
+                    }
+                    temp = temp.getNext();
+                }
+            }
+        }
     }
 
     @Override
     public String get(String key) {
+        String letter = HashFunctionThree(key);
+        for (SinglyLinkedList s : singlyLinkedList) {
+            if (s.getHead().getKey().equals(letter)) {
+                Node<String, String> temp = s.getHead();
+                while (temp != null) {
+                    if (temp.getKey().equals(key)) {
+                        return temp.getValue();
+                    }
+                    temp = temp.getNext();
+                }
+            }
+        }
         return null;
     }
 
     @Override
-    public boolean isEmpty() {
+    public boolean isEmpty(int num) {
+        if (this.singlyLinkedList[num].getHead().getNext() == null) {
+            return true;
+        }
         return false;
     }
 
     @Override
     public long size() {
-        return 0;
+        long counter = 0;
+        for (SinglyLinkedList s : singlyLinkedList) {
+            if (s.getHead().hasNext()) {
+                Node<String, String> temp = s.getHead();
+                while (temp.hasNext()) {
+                    counter++;
+                    temp = temp.getNext();
+                }
+            }
+        }
+        return counter;
     }
 
-    @Override
-    public boolean bucketSize(String key) {
-        return false;
-    }
 }

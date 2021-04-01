@@ -1,3 +1,5 @@
+import javafx.util.Pair;
+
 public class DashaMapOne implements HashMapX {
     SinglyLinkedList[] singlyLinkedList;
 
@@ -50,27 +52,59 @@ public class DashaMapOne implements HashMapX {
     }
 
     @Override
-    public String delete(String key) {
-        return null;
+    public void delete(String key) {
+        String firstLetter = HashFunctionOne(key);
+        for (SinglyLinkedList s : singlyLinkedList) {
+            if (s.getHead().getKey().equals(firstLetter)) {
+                Node<String, String> temp = s.getHead();
+                while (temp.hasNext()) {
+                    if (temp.getNext().getKey().equals(key)) {
+                        temp.setNext(temp.getNext().getNext());
+                        break;
+                    }
+                    temp = temp.getNext();
+                }
+            }
+        }
     }
 
     @Override
     public String get(String key) {
+        String firstLetter = HashFunctionOne(key);
+        for (SinglyLinkedList s : singlyLinkedList) {
+            if (s.getHead().getKey().equals(firstLetter)) {
+                Node<String, String> temp = s.getHead();
+                while (temp != null) {
+                    if (temp.getKey().equals(key)) {
+                        return temp.getValue();
+                    }
+                    temp = temp.getNext();
+                }
+            }
+        }
         return null;
     }
 
     @Override
-    public boolean isEmpty() {
+    public boolean isEmpty(int num) {
+        if (this.singlyLinkedList[num].getHead().getNext() == null) {
+            return true;
+        }
         return false;
     }
 
     @Override
     public long size() {
-        return 0;
-    }
-
-    @Override
-    public boolean bucketSize(String key) {
-        return false;
+        long counter = 0;
+        for (SinglyLinkedList s : singlyLinkedList) {
+            if (s.getHead().hasNext()) {
+                Node<String, String> temp = s.getHead();
+                while (temp.hasNext()) {
+                    counter++;
+                    temp = temp.getNext();
+                }
+            }
+        }
+        return counter;
     }
 }
