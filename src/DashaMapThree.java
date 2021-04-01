@@ -44,6 +44,16 @@ public class DashaMapThree implements HashMapX{
         return null;
     }
 
+    public Node<String, String> findIn (int arrIndex, String key) {
+        Node<String, String> temp = singlyLinkedList[arrIndex].getHead();
+        while (temp != null) {
+            if (temp.getKey().equals(key)) {
+                return temp;
+            }
+        }
+        return null;
+    }
+
     @Override
     public void set(String key, String value) {
         String letter = HashFunctionThree(key);

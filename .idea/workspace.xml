@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16758b06-b4a0-4f1d-844b-c1c64f8682b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/DashaMapThreeTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/DashaMapTwoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DashaMapOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DashaMapThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapThree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DashaMapTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DashaMapTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMapX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMapX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/DashaMapOneTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DashaMapOneTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +99,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DashaMapThreeTests.sizeWithTest">
+  <component name="RunManager" selected="JUnit.DashaMapOneTests.findInTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -129,11 +125,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashaMapThreeTests.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DashaMapOneTests.findInTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DashaMaps" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DashaMapThreeTests" />
-      <option name="METHOD_NAME" value="deleteTest" />
+      <option name="MAIN_CLASS_NAME" value="DashaMapOneTests" />
+      <option name="METHOD_NAME" value="findInTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -211,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DashaMapOneTests.findInTest" />
         <item itemvalue="JUnit.DashaMapThreeTests.sizeWithTest" />
         <item itemvalue="JUnit.DashaMapThreeTests.sizeTest" />
         <item itemvalue="JUnit.DashaMapThreeTests.isEmptyTrueTest" />
         <item itemvalue="JUnit.DashaMapThreeTests.isEmptyTest" />
-        <item itemvalue="JUnit.DashaMapThreeTests.deleteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +230,7 @@
       <workItem from="1565357963802" duration="4390000" />
       <workItem from="1616872140496" duration="74000" />
       <workItem from="1617191896326" duration="11441000" />
-      <workItem from="1617232846618" duration="5510000" />
+      <workItem from="1617232846618" duration="6269000" />
     </task>
     <servers />
   </component>

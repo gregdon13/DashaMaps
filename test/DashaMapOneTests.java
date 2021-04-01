@@ -117,4 +117,19 @@ public class DashaMapOneTests {
         //Then
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void findInTest() {
+        //Given
+        DashaMapOne dMapOne = new DashaMapOne();
+        dMapOne.set("actor", "30");
+        dMapOne.set("aunt", "12");
+        String expected = "12";
+
+        //When
+        String actual = dMapOne.findIn(0, "aunt").getValue();
+
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
 }

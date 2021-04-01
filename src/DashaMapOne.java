@@ -41,6 +41,17 @@ public class DashaMapOne implements HashMapX {
         return null;
     }
 
+    public Node<String, String> findIn (int arrIndex, String key) {
+        Node<String, String> temp = singlyLinkedList[arrIndex].getHead();
+        while (temp != null) {
+            if (temp.getKey().equals(key)) {
+                return temp;
+            }
+            temp = temp.getNext();
+        }
+        return null;
+    }
+
     @Override
     public void set(String key, String value) {
         String firstLetter = HashFunctionOne(key);
